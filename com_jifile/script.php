@@ -108,7 +108,7 @@ class com_jifileInstallerScript
 		{
 			$query = trim($query);
 		
-			if ($query != '' && $query{0} != '#')
+			if ($query != '' && $query[0] != '#')
 			{
 				$db->setQuery($query);
 		

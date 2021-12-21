@@ -754,7 +754,7 @@ class LuceneServerCheck {
 	private function lastDS($path) {
 		$path = realpath($path);
 		
-		$lastChar = $path{strlen($path)-1};
+		$lastChar = $path[strlen($path)-1];
 		if($lastChar != DIRECTORY_SEPARATOR) {
 			$path .= DIRECTORY_SEPARATOR;
 		}

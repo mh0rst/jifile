@@ -115,7 +115,7 @@ class IFileHelper {
 	static function deleteLastSlash($path) {
 		$path = realpath($path);		
 		
-		if($path{strlen($path)-1} == DIRECTORY_SEPARATOR) {
+		if($path[strlen($path)-1] == DIRECTORY_SEPARATOR) {
 			return substr($path,0,-1);			
 		}
 		
@@ -257,7 +257,7 @@ class IFileHelper {
 		foreach ($lines as $line)
 		{
 			// ignore comments
-			if ($line && $line{0} == ';') {
+			if ($line && $line[0] == ';') {
 				continue;
 			}
 
@@ -268,7 +268,7 @@ class IFileHelper {
 			}
 
 			$lineLen = strlen($line);
-			if ($line && $line{0} == '[' && $line{$lineLen-1} == ']')
+			if ($line && $line[0] == '[' && $line[$lineLen-1] == ']')
 			{
 				$sec_name = substr($line, 1, $lineLen - 2);
 				if ($process_sections) {
@@ -282,10 +282,10 @@ class IFileHelper {
 					$property = trim(substr($line, 0, $pos));
 
 					// property is assumed to be ascii
-					if ($property && $property{0} == '"')
+					if ($property && $property[0] == '"')
 					{
 						$propLen = strlen( $property );
-						if ($property{$propLen-1} == '"') {
+						if ($property[$propLen-1] == '"') {
 							$property = stripcslashes(substr($property, 1, $propLen - 2));
 						}
 					}
@@ -313,10 +313,10 @@ class IFileHelper {
 								else if ($value == 'true') {
 									$value = true;
 								}
-								else if ($value && $value{0} == '"')
+								else if ($value && $value[0] == '"')
 								{
 									$valueLen = strlen( $value );
-									if ($value{$valueLen-1} == '"') {
+									if ($value[$valueLen-1] == '"') {
 										$value = stripcslashes(substr($value, 1, $valueLen - 2));
 									}
 								}
@@ -353,10 +353,10 @@ class IFileHelper {
 						else if ($value == 'true') {
 							$value = true;
 						}
-						else if ($value && $value{0} == '"')
+						else if ($value && $value[0] == '"')
 						{
 							$valueLen = strlen( $value );
-							if ($value{$valueLen-1} == '"') {
+							if ($value[$valueLen-1] == '"') {
 								$value = stripcslashes(substr($value, 1, $valueLen - 2));
 							}
 						}
@@ -378,7 +378,7 @@ class IFileHelper {
 				}
 				else
 				{
-					if ($line && $line{0} == ';') {
+					if ($line && $line[0] == ';') {
 						continue;
 					}
 					if ($process_sections)
