@@ -7,8 +7,8 @@
 	<authorUrl>http://jifile.isapp.it/</authorUrl>
 	<copyright>Copyright (C) 2011 isapp.it. All rights reserved</copyright>
 	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
-	<version>2.3</version>
-	<releaseDate>2014-07-05</releaseDate>
+	<version>2.3.2</version>
+	<releaseDate>2021-12-21</releaseDate>
 	<releaseType>Stable Relaese</releaseType>
 	<downloadUrl>http://www.isapp.it/download-jifile.html</downloadUrl>
 	<description><![CDATA[Indexing and search document PDF, DOC, JPG on the your Joomla!.<br/><a target="_blank" href="http://jifile.isapp.it">http://jifile.isapp.it</a>]]></description>
