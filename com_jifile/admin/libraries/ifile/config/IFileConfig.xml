@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * Leggi il file readme.txt per la descrizione dei TAG del file IFileConfig.xml 
+ */  
+-->
+<ifile>
+  <duplicate>0</duplicate>
+  <root-application>../</root-application>
+  <analyzer>
+    <type>
+      <default>Utf8Num_CaseInsensitive</default>
+    </type>
+  </analyzer>
+</ifile>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <config>
+	<fieldset
+		name="paths"
+		label="PATHS_CONFIG"
+	>
+		<field name="base_path" default="ifile/" type="text" size="70" description="FILESYSTEM_PATH" label="FILESYSTEM_PATH_LABEL" />
+ 		<field name="index_path" default="ifile_index/" type="text" size="70" description="INDEX_PATH" label="INDEX_PATH_LABEL" />
+ 		<field name="ignoreFile" default=".cvs, Thumbs.db" type="text" size="70" description="JIFILE_IGNORE_FILE_DESC" label="JIFILE_IGNORE_FILE_LABEL" />
+ 		<field name="encoding_so" type="list"
+					default=""
+					description="JIFILE_ENCODING_SO_DESC"
+					label="JIFILE_ENCODING_SO_LABEL"
+				>
+					<option value=""></option>
+					<option value="UTF-8">UTF-8</option>
+					<option value="ASCII">ASCII</option>
+					<option value="ISO-8859-1">ISO-8859-1</option>
+					<option value="ISO-8859-15">ISO-8859-15</option>
+					<option value="CP1256">CP1256</option>
+					<option value="Windows-1252">Windows-1252</option>
+		</field>
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_jifile"
+			section="component"
+		/>
+	</fieldset>
+ </config>

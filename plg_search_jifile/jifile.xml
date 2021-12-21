@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="search" method="upgrade">
+	<name>Search - JiFile</name>
+	<author>isApp.it Team</author>
+	<creationDate>2012-05-05</creationDate>
+	<copyright>Copyright (C) 2011 isapp.it. All rights reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>info@isapp.it</authorEmail>
+	<authorUrl>http://jifile.isapp.it/</authorUrl>
+	<version>2.1</version>
+	<releaseDate>2014-07-05</releaseDate>
+	<releaseType>Stable Relaese</releaseType>
+	<description>ENABLES_EARCHING_OF_FILES_CONTENT</description>
+	<files>
+		<filename plugin="jifile">jifile.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_search_jifile.ini</language>
+        <language tag="it-IT">it-IT/it-IT.plg_search_jifile.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					default="50"
+					description="JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC"
+					label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
+					size="5"
+				/>
+				<field name="area_name" type="text"
+					default="Documents"
+					description="JFIELD_PLG_JIFILE_NAME_DESC"
+					label="JFIELD_PLG_JIFILE_NAME_LABEL"
+					size="25"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

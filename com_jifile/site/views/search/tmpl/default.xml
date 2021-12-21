@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JIFILE_SEARCH_VIEW_DEFAULT_TITLE" option="COM_JIFILE_SEARCH_VIEW_DEFAULT_OPTION">
+		<help
+			key = "JHELP_MENUS_MENU_ITEM_SEARCH_RESULTS"
+		/>
+		<message>
+			<![CDATA[COM_JIFILE_SEARCH_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request" label="COM_JIFILE_FIELDSET_OPTIONAL_LABEL">
+
+			<field name="searchword" type="text"
+				description="COM_JIFILE_FIELD_DESC"
+				label="COM_JIFILE_FIELD_LABEL"
+			/>
+		</fieldset>
+	</fields>
+	<!-- fields name="params" addfieldpath="components/com_jifile/models/fields">
+        <fieldset name="params" label="COM_JIFILE_FIELDSET_ADDON_LABEL">
+                <field 
+                        type="modal_addon"
+                        name="addon_params" 
+                        label="COM_JIFILE_FIELDSET_ADDON_LABEL" 
+                        description="COM_JIFILE_FIELDSET_ADDON_DESC"
+                />
+        </fieldset>
+	</fields-->
+	<!-- Add fields to the parameters object for the layout. -->	
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+			
+			<!-- Add fields to define saved search. -->
+
+			<field name="searchphrase" type="radio"
+				default="0"
+				description="COM_JIFILE_FOR_DESC"
+				label="COM_JIFILE_FOR_LABEL"
+			>
+				<option value="all">COM_JIFILE_ALL_WORDS</option>
+				<option value="any">COM_JIFILE_ANY_WORDS</option>
+				<option value="exact">COM_JIFILE_EXACT_PHRASE</option>
+			</field>
+			<field name="maxchars_search" type="text" default="20" />
+			
+			<!--field name="ordering" type="list"
+				default="0"
+				description="COM_JIFILE_ORDERING_DESC"
+				label="COM_JIFILE_ORDERING_LABEL"
+			>
+				<option value="newest">COM_SEARCH_NEWEST_FIRST</option>
+				<option value="oldest">COM_SEARCH_OLDEST_FIRST</option>
+				<option value="popular">COM_SEARCH_MOST_POPULAR</option>
+				<option value="alpha">COM_SEARCH_ALPHABETICAL</option>
+				<option value="category">JCATEGORY</option>
+			</field-->			
+			
+		</fieldset>
+	</fields>
+</metadata>

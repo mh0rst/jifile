@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>JiFile</name>
+	<creationDate>2012-10-03</creationDate>
+	<author>isApp.it Team</author>
+	<authorEmail>info@isapp.it</authorEmail>
+	<authorUrl>http://jifile.isapp.it/</authorUrl>
+	<copyright>Copyright (C) 2011 isapp.it. All rights reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.3</version>
+	<releaseDate>2014-07-05</releaseDate>
+	<releaseType>Stable Relaese</releaseType>
+	<downloadUrl>http://www.isapp.it/download-jifile.html</downloadUrl>
+	<description><![CDATA[Indexing and search document PDF, DOC, JPG on the your Joomla!.<br/><a target="_blank" href="http://jifile.isapp.it">http://jifile.isapp.it</a>]]></description>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<install folder="admin">
+		<sql>
+			<file driver="mysql" charset="utf8">sql/updates/mysql/2.0.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall folder="admin">
+		<sql>
+			<file driver="mysql" charset="utf8">sql/sql-uninstaller.sql</file>
+		</sql>
+	</uninstall>
+	
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	
+	<files folder="site">
+		<folder>addon</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>jifile.php</filename>
+		<filename>LICENSE.php</filename>
+		<filename>CHANGELOG.php</filename>
+		<filename>router.php</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB" client="site">site/language/en-GB/en-GB.com_jifile.ini</language>
+		<language tag="it-IT" client="site">site/language/it-IT/it-IT.com_jifile.ini</language>
+	</languages>
+	
+	<administration>
+		<menu img="components/com_jifile/images/logo16V2.png">JiFile</menu>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>jifile.php</filename>
+			<filename>version.php</filename>
+			<filename>LICENSE.txt</filename>
+			<folder>cache</folder>
+			<folder>controllers</folder>
+			<folder>css</folder>
+			<folder>helpers</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>libraries</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>addon</folder>
+			<folder>tables</folder>
+			<folder>sql</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_jifile.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jifile.sys.ini</language>
+			<language tag="it-IT">language/it-IT/it-IT.com_jifile.ini</language>
+			<language tag="it-IT">language/it-IT/it-IT.com_jifile.sys.ini</language>
+		</languages>
+	</administration>
+	<updateservers>
+		<server type="extension" priority="2" name="JiFile Updates">http://www.isapp.it/updates/jifile-update.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_jifile">
+	<section name="component">
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.filesystem" title="JACTION_FILESYSTEM" description="JACTION_FILESYSTEM_DESC" />
+		<action name="core.index" title="JACTION_INDEX" description="JACTION_INDEX_DESC" />
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+	</section>
+</access>

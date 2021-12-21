@@ -1,0 +1,50 @@
+-- Sistemato l'errore "Root application inesistente"
+
+-- Sistemato il problema della visualizzazione della data di creazione per i PDF
+-- anche nella parte di indicizzazione manuale
+administrator/components/com_jifile/views/manualindex/view.html.php
+administrator/components/com_jifile/views/manualindex/tmpl/default_component.php
+-- definiti i campi "created" e "modified" come keyword
+administrator/components/com_jifile/libraries/ifile/IFileConfig.php
+administrator/components/com_jifile/libraries/ifile/adapter/Adapter_Search_Lucene_Document_PDF.php
+
+-- Sistemato problema delle date anche per i file immagine
+administrator/components/com_jifile/models/lucene.php
+administrator/components/com_jifile/views/manualindex/tmpl/default_component_images.php
+administrator/components/com_jifile/libraries/ifile/adapter/helpers/class.image2txt.php
+administrator/components/com_jifile/libraries/ifile/adapter/Adapter_Search_Lucene_Document_JPG.php
+
+-- Sistemato problema delle date anche per i file txt
+administrator/components/com_jifile/libraries/ifile/adapter/Adapter_Search_Lucene_Document_TXT.php
+
+-- Sistemato problema delle date anche per i file MP3
+administrator/components/com_jifile/models/lucene.php
+
+-- sistemato il problema della visualizzazione dell'intero testo nella nostra Search
+-- ATTENZIONE: nella prossima versione di Joomla! dovrebbe sparire la com_search 
+-- pertanto andranno reimplementati gli algoritmi per la highlight e il troncamento dei carattery del Body
+components/com_jifile/views/search/view.html.php
+components/com_jifile/views/search/tmpl/default_results.php
+
+
+-- Sistemare il problema per l'ordinamento dei documenti per la data (nuovi / vecchi) e alfabetico (penso per il titolo) 
+-- si potrebbe utilizzare la data di creazione dei documenti, ma questo comporta avere
+-- un unico field per la data per tutti i documenti (andrà standardizzata questa parte in IFile)
+- Most Popular 	=> ordinamento per Runk
+- Category 		=> ordinamento per Runk
+- New 			=> ordinamento per Runk
+- Old 			=> ordinamento per Runk
+- Alphabetica 	=> ordinamento per il nome del file
+plugins/search/jifile/jifile.php
+
+-- Sistemare il problema sull'utilizzo della configurazione del menù
+/components/com_jifile/models/search.php (linea 65 - 68)
+
+-- Modificato metodo per la verifica della rootpath:
+administrator/components/com_jifile/helpers/jifilehelper.php (linea 113)
+
+-- Modificare il processo della "ignore":
+administrator/components/com_jifile/models/filesystem.php (linea 119)
+
+-- Sistemato errore nella inclusione della classe version:
+administrator/components/com_jifile/jifile.com (linea 12)

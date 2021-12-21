@@ -1,0 +1,131 @@
+/**
+ * @subpackage	com_jifile
+ * @author		Antonio Di Girolamo & Giampaolo Losito
+ * @copyright	Copyright (C) 2011 isApp.it. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @link		http://jifile.isapp.it
+ */
+ 
+#ifile .iconFile {
+	background-repeat: no-repeat;
+	padding: 0 0 3px 18px;
+	width: inherit;
+	height: inherit;
+}
+#ifile .icon-16-folder {
+	background-image: url("../images/doc_types/folder.png");
+}
+#ifile .icon-16-avi {
+	background-image: url("../images/doc_types/avi.png");
+}
+#ifile .icon-16-bmp {
+	background-image: url("../images/doc_types/bmp.gif");
+}
+#ifile .icon-16-doc {
+	background-image: url("../images/doc_types/doc.png");
+}
+#ifile .icon-16-docx {
+	background-image: url("../images/doc_types/docx.png");
+}
+#ifile .icon-16-exe {
+	background-image: url("../images/doc_types/exe.png");
+}
+#ifile .icon-16-generic {
+	background-image: url("../images/doc_types/generic.png");
+}
+#ifile .icon-16-gif {
+	background-image: url("../images/doc_types/gif.gif");
+}
+#ifile .icon-16-gz {
+	background-image: url("../images/doc_types/gz.png");
+}
+#ifile .icon-16-ico {
+	background-image: url("../images/doc_types/ico.png");
+}
+#ifile .icon-16-jpg {
+	background-image: url("../images/doc_types/jpg.gif");
+}
+#ifile .icon-16-mid {
+	background-image: url("../images/doc_types/mid.png");
+}
+#ifile .icon-16-mov {
+	background-image: url("../images/doc_types/mov.png");
+}
+#ifile .icon-16-mp3 {
+	background-image: url("../images/doc_types/mp3.png");
+}
+#ifile .icon-16-mpeg {
+	background-image: url("../images/doc_types/mpeg.png");
+}
+#ifile .icon-16-mpg {
+	background-image: url("../images/doc_types/mpg.png");
+}
+#ifile .icon-16-odt {
+	background-image: url("../images/doc_types/odt.png");
+}
+#ifile .icon-16-ods {
+	background-image: url("../images/doc_types/ods.gif");
+}
+#ifile .icon-16-pdf {
+	background-image: url("../images/doc_types/pdf.gif");
+}
+#ifile .icon-16-png {
+	background-image: url("../images/doc_types/png.gif");
+}
+#ifile .icon-16-psd {
+	background-image: url("../images/doc_types/psd.png");
+}
+#ifile .icon-16-ra {
+	background-image: url("../images/doc_types/ra.png");
+}
+#ifile .icon-16-rar {
+	background-image: url("../images/doc_types/rar.gif");
+}
+#ifile .icon-16-rtf {
+	background-image: url("../images/doc_types/rtf.png");
+}
+#ifile .icon-16-svg {
+	background-image: url("../images/doc_types/svg.png");
+}
+#ifile .icon-16-swf {
+	background-image: url("../images/doc_types/swf.png");
+}
+#ifile .icon-16-tar {
+	background-image: url("../images/doc_types/tar.png");
+}
+#ifile .icon-16-tif {
+	background-image: url("../images/doc_types/tif.png");
+}
+#ifile .icon-16-tiff {
+	background-image: url("../images/doc_types/tiff.png");
+}
+#ifile .icon-16-txt {
+	background-image: url("../images/doc_types/txt.gif");
+}
+#ifile .icon-16-wav {
+	background-image: url("../images/doc_types/wav.png");
+}
+#ifile .icon-16-wma {
+	background-image: url("../images/doc_types/wma.png");
+}
+#ifile .icon-16-wmv {
+	background-image: url("../images/doc_types/wmv.png");
+}
+#ifile .icon-16-xls {
+	background-image: url("../images/doc_types/xls.gif");
+}
+#ifile .icon-16-xlsx {
+	background-image: url("../images/doc_types/xlsx.gif");
+}
+#ifile .icon-16-zip {
+	background-image: url("../images/doc_types/zip.gif");
+}
+#ifile .icon-16-pptx {
+	background-image: url("../images/doc_types/pptx.png");
+}
+#ifile .icon-16-htm, #ifile .icon-16-html {
+	background-image: url("../images/doc_types/htm.gif");
+}
+#ifile .icon-16-xml {
+	background-image: url("../images/doc_types/xml.gif");
+}
