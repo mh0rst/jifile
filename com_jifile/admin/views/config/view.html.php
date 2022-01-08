@@ -74,10 +74,10 @@ class JifileViewConfig extends JViewLegacy {
 		$pdftotext  = $config->getXpdf('pdftotext');
 		$pdfinfo 	= $config->getXpdf('pdfinfo');
 		$xmlValue['xpdf'] = array();
-		$xmlValue['xpdf']['pdftotext']['executable'] = (isset($reqXml['xpdf']['pdftotext']['executable'])) ? $reqXml['xpdf']['pdftotext']['executable'] : (!empty($pdftotext['executable'])) ? $pdftotext['executable'] : "" ;
-		$xmlValue['xpdf']['pdftotext']['xpdfrc'] = (isset($reqXml['xpdf']['pdftotext']['xpdfrc'])) ? $reqXml['xpdf']['pdftotext']['xpdfrc'] : (!empty($pdftotext['xpdfrc'])) ? $pdftotext['xpdfrc'] : "" ;
-		$xmlValue['xpdf']['pdfinfo']['executable'] = (isset($reqXml['xpdf']['pdfinfo']['executable'])) ? $reqXml['xpdf']['pdfinfo']['executable'] : (!empty($pdfinfo['executable'])) ? $pdfinfo['executable'] : "" ;
-		$xmlValue['xpdf']['pdfinfo']['xpdfrc'] = (isset($reqXml['xpdf']['pdfinfo']['xpdfrc'])) ? $reqXml['xpdf']['pdfinfo']['xpdfrc'] : (!empty($pdfinfo['xpdfrc'])) ? $pdfinfo['xpdfrc'] : "" ;
+		$xmlValue['xpdf']['pdftotext']['executable'] = (isset($reqXml['xpdf']['pdftotext']['executable'])) ? $reqXml['xpdf']['pdftotext']['executable'] : ((!empty($pdftotext['executable'])) ? $pdftotext['executable'] : "") ;
+		$xmlValue['xpdf']['pdftotext']['xpdfrc'] = (isset($reqXml['xpdf']['pdftotext']['xpdfrc'])) ? $reqXml['xpdf']['pdftotext']['xpdfrc'] : ((!empty($pdftotext['xpdfrc'])) ? $pdftotext['xpdfrc'] : "") ;
+		$xmlValue['xpdf']['pdfinfo']['executable'] = (isset($reqXml['xpdf']['pdfinfo']['executable'])) ? $reqXml['xpdf']['pdfinfo']['executable'] : ((!empty($pdfinfo['executable'])) ? $pdfinfo['executable'] : "") ;
+		$xmlValue['xpdf']['pdfinfo']['xpdfrc'] = (isset($reqXml['xpdf']['pdfinfo']['xpdfrc'])) ? $reqXml['xpdf']['pdfinfo']['xpdfrc'] : ((!empty($pdfinfo['xpdfrc'])) ? $pdfinfo['xpdfrc'] : "") ;
 		
 		// Analyzer
 		$default = (isset($reqXml['analyzer']['type']['default'])) ? $reqXml['analyzer']['type']['default'] : ($config->getConfig('xml-custom-analyzer') ? ' ' : $config->getConfig('analyzer'));
